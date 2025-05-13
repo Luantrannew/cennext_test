@@ -1,28 +1,67 @@
-📚 CENNEXT Multi-Service App
-Ứng dụng được tách thành 3 phần riêng biệt, mỗi phần chạy dưới dạng một Docker service:
+# bài test
 
-part1: Chạy script part1/main.py
-part2: Chạy script part2/main.py
-part3: API viết bằng FastAPI (part3.py) — mặc định sẽ chạy
+Ứng dụng này bao gồm 3 phần:
+- **part1**: Script Python độc lập (`part1/main.py`)
+- **part2**: Script Python độc lập (`part2/main.py`) 
+- **part3**: API viết bằng FastAPI (`part3.py`) — mặc định sẽ chạy
 
+---
 
-🔧 Yêu cầu
+## 🚀 Yêu cầu
+- Docker
+- Docker Compose
 
-Docker
-Docker Compose
+---
 
+## ⚙️ Hướng dẫn sử dụng
 
-🚀 Cách sử dụng
-1. Build & chạy phần part3 (FastAPI)
-bashdocker-compose up --build api
-2. Build & chạy phần part1 / part2
-Chạy part1:
-bashdocker-compose up part1
-Chạy part2:
-bashdocker-compose up part2
-3. Dừng một phần cụ thể
-bashdocker-compose stop part1
+### 1. Build và khởi động phần API (mặc định)
+```bash
+docker-compose up --build api
+```
+
+Sau khi chạy xong, truy cập trình duyệt tại:
+```
+http://localhost:8000/
+```
+
+### 2. Chạy thêm từng phần khi cần
+Các phần `part1` và `part2` **không chạy tự động**, chỉ kích hoạt khi cần.
+
+Chạy `part1`:
+```bash
+docker-compose up part1
+```
+
+Chạy `part2`:
+```bash
+docker-compose up part2
+```
+
+### 3. Dừng một phần cụ thể
+```bash
+docker-compose stop part1
 docker-compose stop part2
-docker-compose stop part3
-4. Dừng hệ thống
-bashdocker-compose down
+```
+
+### 4. Dừng và xóa toàn bộ container
+```bash
+docker-compose down
+```
+
+## 📁 Cấu trúc thư mục
+```
+.
+├── part1/
+│   └── main.py
+├── part2/
+│   └── main.py
+├── part3.py
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
+```
+
+## 📌 Ghi chú
+* Tất cả các phần dùng chung 1 Docker image (build từ `Dockerfile`)
+* Các phần hoạt động độc lập và có thể chạy song song khi cần
