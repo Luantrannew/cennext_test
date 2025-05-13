@@ -24,6 +24,10 @@ Sau khi chạy xong, truy cập trình duyệt tại:
 ```
 http://localhost:8000/books
 ```
+hoặc truy cập Swagger UI thông qua
+```
+http://localhost:8000/docs
+```
 
 ### 2. Chạy thêm từng phần khi cần
 Các phần `part1` và `part2` **không chạy tự động**, chỉ kích hoạt khi cần.
@@ -62,7 +66,3 @@ docker-compose down
 ├── Dockerfile
 └── docker-compose.yml
 ```
-
-## 📌 Ghi chú
-* Tất cả các phần dùng chung 1 Docker image (build từ `Dockerfile`)
-* Các phần hoạt động độc lập và có thể chạy song song khi cần
