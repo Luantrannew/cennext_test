@@ -7,10 +7,9 @@
 
 ---
 
-## 🚀 Yêu cầu
-- Docker
-- Docker Compose
-
+## 🚀 Chuẩn bị
+git clone dự án 
+tải ứng dụng docker desktop
 ---
 
 ## ⚙️ Hướng dẫn sử dụng
