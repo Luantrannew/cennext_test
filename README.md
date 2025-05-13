@@ -15,14 +15,14 @@
 
 ## ⚙️ Hướng dẫn sử dụng
 
-### 1. Build và khởi động phần API (mặc định)
+### 1. Build và khởi động phần part3 (FastAPI)
 ```bash
-docker-compose up --build api
+docker-compose up --build part3
 ```
 
 Sau khi chạy xong, truy cập trình duyệt tại:
 ```
-http://localhost:8000/
+http://localhost:8000/books
 ```
 
 ### 2. Chạy thêm từng phần khi cần
@@ -42,6 +42,7 @@ docker-compose up part2
 ```bash
 docker-compose stop part1
 docker-compose stop part2
+docker-compose stop part3
 ```
 
 ### 4. Dừng và xóa toàn bộ container
