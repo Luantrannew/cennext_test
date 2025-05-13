@@ -11,6 +11,7 @@
 ```
 git clone dự án 
 tải ứng dụng docker desktop
+```
 ---
 
 ## ⚙️ Hướng dẫn sử dụng
