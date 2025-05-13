@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  part1:
+    build: .
+    container_name: part1-service
+    command: ["python", "part1/main.py"]
+
+  part2:
+    build: .
+    container_name: part2-service
+    command: ["python", "part2/main.py"]
+
+  part3:
+    build: .
+    container_name: part3-api
+    ports:
+      - "8000:8000"
+    command: ["uvicorn", "part3:app", "--host", "0.0.0.0", "--port", "8000"]

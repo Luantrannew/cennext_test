@@ -30,8 +30,6 @@ actions = ActionChains(driver)
 actions.move_to_element(category).click().perform()
 
 
-
-
 # Đường dẫn tới thư mục lưu file (cùng cấp với part1)
 base_dir = os.path.dirname(os.path.abspath(__file__))
 save_dir = os.path.join(base_dir, "..", "data", "part1")
