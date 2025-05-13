@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     chromium \
     && rm -rf /var/lib/apt/lists/*
 
+RUN mkdir -p /tmp/chrome-data && chmod 777 /tmp/chrome-data
+
 # Cài đặt thư viện Python
 WORKDIR /app
 COPY requirements.txt .

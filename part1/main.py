@@ -15,6 +15,7 @@ options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
 options.add_argument("--disable-notifications")
+options.add_argument("--user-data-dir=/tmp/chrome-data")
 
 prefs = {"credentials_enable_service": False,
      "profile.password_manager_enabled": False}
