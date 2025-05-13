@@ -8,6 +8,7 @@
 ---
 
 ## 🚀 Chuẩn bị
+```
 git clone dự án 
 tải ứng dụng docker desktop
 ---
