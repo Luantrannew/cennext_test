@@ -3,7 +3,7 @@
 Ứng dụng này bao gồm 3 phần:
 - **part1**: Script Python độc lập (`part1/main.py`)
 - **part2**: Script Python độc lập (`part2/main.py`) 
-- **part3**: API viết bằng FastAPI (`part3.py`) — mặc định sẽ chạy
+- **part3**: API viết bằng FastAPI (`part3.py`)
 
 ---
 
