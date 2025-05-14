@@ -6,8 +6,10 @@ import json
 app = FastAPI()
 
 # Load books data on startup
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.join(BASE_DIR, "data", "part2", "books_with_country.json")
+# Load books data on startup
+# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# DATA_PATH = os.path.join(BASE_DIR, "data", "part2", "books_with_country.json")
+DATA_PATH = "/app/data/part2/books_with_country.json"
 
 books_data: List[dict] = []
 
