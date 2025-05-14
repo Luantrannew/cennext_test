@@ -38,9 +38,11 @@ def save_to_json(data: List[Dict[str, Any]], output_file: str) -> None:
     print(f"Dữ liệu đã được lưu vào {output_file}")
 
 def main():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    input_file = os.path.join(base_dir, "..", "data", "part1", "books.json")
-    output_file = os.path.join(base_dir, "..", "data", "part2", "books_with_country.json")
+    # base_dir = os.path.dirname(os.path.abspath(__file__))
+    # input_file = os.path.join(base_dir, "..", "data", "part1", "books.json")
+    # output_file = os.path.join(base_dir, "..", "data", "part2", "books_with_country.json")
+    input_file = "/app/data/part1/books.json"
+    output_file = "/app/data/part2/books_with_country.json"
 
     if not os.path.exists(output_file):
          os.makedirs(os.path.dirname(output_file), exist_ok=True)

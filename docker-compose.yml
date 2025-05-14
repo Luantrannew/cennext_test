@@ -5,11 +5,15 @@ services:
     build: .
     container_name: part1-service
     command: ["python", "part1/main.py"]
+    volumes:
+      - ./data:/app/data
 
   part2:
     build: .
     container_name: part2-service
     command: ["python", "part2/main.py"]
+    volumes:
+      - ./data:/app/data
 
   part3:
     build: .

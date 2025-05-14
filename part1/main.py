@@ -38,9 +38,11 @@ actions.move_to_element(category).click().perform()
 
 
 # Đường dẫn tới thư mục lưu file (cùng cấp với part1)
-base_dir = os.path.dirname(os.path.abspath(__file__))
-save_dir = os.path.join(base_dir, "..", "data", "part1")
-backup_dir = os.path.join(base_dir, "..", "data", "html_backup")
+# base_dir = os.path.dirname(os.path.abspath(__file__))
+# save_dir = os.path.join(base_dir, "..", "data", "part1")
+# backup_dir = os.path.join(base_dir, "..", "data", "html_backup")
+save_dir = "/app/data/part1"
+backup_dir = "/app/data/html_backup"
 
 os.makedirs(save_dir, exist_ok=True)
 os.makedirs(backup_dir, exist_ok=True)
